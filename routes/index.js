@@ -6,8 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/index', function(req, res, next) {
+  res.render('index');
+});
 router.get('/credits',function(req,res,next){
   res.render('credits');
-})
+});
 
 module.exports = router;
