@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    <%for(var i in quiz){%>
+    <%console.log(quiz[i].answer);%>
+
+
+
+    <h1>
+    <%=quiz[i].question%>: <%=quiz[i].answer%></h1>
+    <%}%>
+
+
+</body>
+</html>
