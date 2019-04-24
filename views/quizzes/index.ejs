@@ -5,14 +5,15 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+    <%=console.log("A:" + quizzes);%>
+    <%for(var i in quizzes){%>
+    <%var quiz = quizzes[i];%>
 
-    <%for(var i in quiz){%>
-    <%console.log(quiz[i].answer);%>
 
 
 
     <h1>
-    <%=quiz[i].question%>: <%=quiz[i].answer%></h1>
+    <%=quiz.question%>: <%=quiz.answer%></h1>
     <%}%>
 
 

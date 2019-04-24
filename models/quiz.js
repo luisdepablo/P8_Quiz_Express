@@ -10,7 +10,6 @@ module.exports=function (sequelize,DataTypes) {
             validate:{notEmpty:{msg:"Answer must not be empty"}}
 
         }
-        }
-        )
+        });
     
-}
+};
